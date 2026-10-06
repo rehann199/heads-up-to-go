@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="t d">
+  <title id="t">Heads Up To Go system overview</title>
+  <desc id="d">A TV remote sends D-pad and select keys to key handlers on each screen. Screens drive the round state, which uses bundled prompt lists and local settings. A native layer provides billing, and services provide ads, audio and analytics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06303c"/>
+      <stop offset="1" stop-color="#0a4756"/>
+    </linearGradient>
+    <style>
+      text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #e9f7fa; }
+      .h { font-size: 26px; font-weight: 700; }
+      .k { font-size: 13px; fill: #8fd3e0; letter-spacing: 1.5px; font-weight: 700; }
+      .b { font-size: 16px; }
+      .s { font-size: 14px; fill: #b4dde5; }
+      .in  { fill: #1b4d5c; stroke: #5fc4d6; stroke-width: 2; }
+      .ui  { fill: #3a2d12; stroke: #f0a63a; stroke-width: 2; }
+      .gm  { fill: #14394a; stroke: #7fd0e0; stroke-width: 2; }
+      .sv  { fill: #2c2a4a; stroke: #9a8fe8; stroke-width: 2; }
+      .nt  { fill: #1f3d2b; stroke: #5fd38a; stroke-width: 2; }
+      .arrow { stroke: #7fd0e0; stroke-width: 2; fill: none; marker-end: url(#a); }
+    </style>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fd0e0"/></marker>
+  </defs>
+  <rect width="1200" height="600" rx="16" fill="url(#bg)"/>
+  <text x="40" y="52" class="h">Heads Up To Go: remote in, party game out</text>
+  <text x="40" y="78" class="s">Android TV, Flutter and Dart, with a small Kotlin layer for billing and store links.</text>
+
+  <rect x="40" y="120" width="220" height="150" rx="12" class="in"/>
+  <text x="60" y="150" class="k">TV REMOTE</text>
+  <text x="60" y="180" class="b">D-pad arrows</text>
+  <text x="60" y="206" class="b">Select / Enter</text>
+  <text x="60" y="232" class="b">Back / Escape</text>
+  <text x="60" y="256" class="s">No touchscreen required</text>
+
+  <rect x="320" y="120" width="300" height="150" rx="12" class="ui"/>
+  <text x="340" y="150" class="k">SCREEN INPUT LAYER</text>
+  <text x="340" y="180" class="b">Key handler per screen</text>
+  <text x="340" y="206" class="b">Cursor or focus state</text>
+  <text x="340" y="232" class="b">Input gated during feedback</text>
+  <text x="340" y="256" class="s">Splash, home, rules, categories, players, round</text>
+
+  <rect x="680" y="120" width="260" height="150" rx="12" class="gm"/>
+  <text x="700" y="150" class="k">ROUND STATE</text>
+  <text x="700" y="180" class="b">Shuffled deck</text>
+  <text x="700" y="206" class="b">Turn timer, pause</text>
+  <text x="700" y="232" class="b">Correct / wrong / skip</text>
+  <text x="700" y="256" class="s">Per-player tallies, winner</text>
+
+  <rect x="980" y="120" width="180" height="150" rx="12" class="gm"/>
+  <text x="1000" y="150" class="k">LOCAL DATA</text>
+  <text x="1000" y="180" class="b">Prompt lists</text>
+  <text x="1000" y="206" class="b">Settings</text>
+  <text x="1000" y="232" class="b">Last results</text>
+  <text x="1000" y="256" class="s">On device</text>
+
+  <path d="M260 195 L316 195" class="arrow"/>
+  <path d="M620 195 L676 195" class="arrow"/>
+  <path d="M940 195 L976 195" class="arrow"/>
+
+  <rect x="40" y="340" width="360" height="190" rx="12" class="sv"/>
+  <text x="60" y="370" class="k">DART SERVICES</text>
+  <text x="60" y="400" class="b">Audio: music tracks, pauses on lifecycle</text>
+  <text x="60" y="426" class="b">Analytics: sanitised events, screen visits</text>
+  <text x="60" y="452" class="b">Crash reporting: breadcrumbs, no debug builds</text>
+  <text x="60" y="478" class="b">Ads: preload, cooldown, safety timeouts</text>
+  <text x="60" y="508" class="s">Ad failure or timeout falls through to the game</text>
+
+  <rect x="450" y="340" width="330" height="190" rx="12" class="nt"/>
+  <text x="470" y="370" class="k">KOTLIN (NATIVE)</text>
+  <text x="470" y="400" class="b">Play Billing manager</text>
+  <text x="470" y="426" class="b">Method and event channels</text>
+  <text x="470" y="452" class="b">Cached ownership, auto-reconnect</text>
+  <text x="470" y="478" class="b">Open store listing intent</text>
+  <text x="470" y="508" class="s">Bridges to Dart over platform channels</text>
+
+  <rect x="830" y="340" width="330" height="190" rx="12" class="sv"/>
+  <text x="850" y="370" class="k">PLATFORM</text>
+  <text x="850" y="400" class="b">Leanback launcher entry + banner</text>
+  <text x="850" y="426" class="b">Landscape only</text>
+  <text x="850" y="452" class="b">Release: shrink, minify, two ABIs</text>
+  <text x="850" y="478" class="b">Firebase Analytics + Crashlytics</text>
+  <text x="850" y="508" class="s">Impeller disabled for TV emulator crashes</text>
+
+  <path d="M470 270 L220 336" class="arrow"/>
+  <path d="M810 270 L640 336" class="arrow"/>
+  <path d="M1070 270 L1000 336" class="arrow"/>
+</svg>
