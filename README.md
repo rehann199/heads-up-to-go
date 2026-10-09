@@ -13,6 +13,7 @@ Flutter · Dart · Kotlin · Firebase · Play Billing · Unity Ads · D-pad inpu
 ![Android TV](https://img.shields.io/badge/Android%20TV-D9822B?logo=androidtv&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
+![For sale](https://img.shields.io/badge/Product-For%20sale-7C4DFF)
 
 <table>
   <tr>
@@ -37,6 +38,14 @@ Flutter · Dart · Kotlin · Firebase · Play Billing · Unity Ads · D-pad inpu
 </p>
 
 The Play listing is titled "Heads Up To Go: Charades TV". The app declares the Leanback launcher category and does not require a touchscreen.
+
+<!-- fw-sale:start -->
+## Reach & Availability
+
+| | |
+|---|---|
+| **Product sale** | This is a Future Watch product and it is **available to buy or license** for your own business. [Ask about buying Heads Up To Go](https://futurewatch.co/contact?type=product&ref=heads-up-to-go) or email [rehan@futurewatch.co](mailto:rehan@futurewatch.co). |
+<!-- fw-sale:end -->
 
 ## Product at a Glance
 
